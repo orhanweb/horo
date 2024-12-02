@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('./assets/fonts/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900; /* It supports 100 to 900 weights */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900; /* It supports 100 to 900 weights */
+  font-style: italic;
+}
