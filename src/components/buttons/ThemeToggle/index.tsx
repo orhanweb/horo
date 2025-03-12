@@ -1,4 +1,4 @@
-// src/components/buttons/ThemeToggle
+// src/components/buttons/ThemeToggle/index.tsx
 import React, { useState } from 'react';
 import ScaleAnimated from '../../ScaleAnimated';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';

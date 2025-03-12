@@ -15,7 +15,8 @@ const Clock: React.FC = () => {
   const formattedTime = currentTime.toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit'
+    second: '2-digit',
+    hour12: false
   });
 
   const formattedDate = currentTime.toLocaleDateString('en-US', {
@@ -28,7 +29,7 @@ const Clock: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center text-center space-y-4">
       {/* Clock */}
-      <div className="text-6xl font-pacifico text-primary">{formattedTime}</div>
+      <div className="text-9xl font-pacifico text-primary">{formattedTime}</div>
       {/* Date */}
       <div className="text-lg text-ash">{formattedDate}</div>
     </div>
