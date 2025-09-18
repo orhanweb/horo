@@ -22,3 +22,55 @@
   font-weight: 100 900; /* It supports 100 to 900 weights */
   font-style: italic;
 }
+
+/* CSS Custom Properties for theming */
+:root {
+  --theme-primary: #ffa22e;
+  --theme-background: white;
+  --theme-text: black;
+  --theme-accent: #808080;
+}
+
+.dark {
+  --theme-primary: #ffa22e;
+  --theme-background: black;
+  --theme-text: white;
+  --theme-accent: #808080;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
